@@ -1,0 +1,9 @@
+services:
+  m4a-splitter:
+    build: .
+    container_name: m4a-splitter-app
+    ports:
+      - "8506:8501"
+    volumes:
+      - .:/app
+    restart: always
